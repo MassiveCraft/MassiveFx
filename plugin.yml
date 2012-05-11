@@ -1,0 +1,19 @@
+name: massivefx
+version: 1.0.0
+main: com.massivecraft.massivefx.P
+depend: [mcore3]
+permissions:
+  massivefx.*:
+    children:
+      massivefx.fxlist: true
+      massivefx.selectorlist: true
+      massivefx.do: true
+  massivefx.fxlist:
+    default: false
+    description: list the available effects
+  massivefx.selectorlist:
+    default: false
+    description: list the available selectors
+  massivefx.do:
+    default: false
+    description: run an effect
