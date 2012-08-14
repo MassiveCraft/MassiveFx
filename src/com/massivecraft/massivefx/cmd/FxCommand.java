@@ -1,7 +1,7 @@
 package com.massivecraft.massivefx.cmd;
 
 import com.massivecraft.massivefx.P;
-import com.massivecraft.mcore3.cmd.MCommand;
+import com.massivecraft.mcore4.cmd.MCommand;
 
 public abstract class FxCommand extends MCommand
 {

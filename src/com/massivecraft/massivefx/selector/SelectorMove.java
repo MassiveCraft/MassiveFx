@@ -7,8 +7,8 @@ import org.bukkit.Location;
 import org.bukkit.block.BlockFace;
 
 import com.massivecraft.massivefx.P;
-import com.massivecraft.mcore3.MCore;
-import com.massivecraft.mcore3.util.IntervalUtil;
+import com.massivecraft.mcore4.MCore;
+import com.massivecraft.mcore4.util.IntervalUtil;
 
 public class SelectorMove extends BaseSelector
 {
