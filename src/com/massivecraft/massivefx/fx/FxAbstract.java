@@ -6,7 +6,7 @@ import java.util.Map;
 
 import org.bukkit.Location;
 
-public abstract class BaseFx implements Fx
+public abstract class FxAbstract implements Fx
 {
 	protected final Map<String, Integer> alias2datas;
 	
@@ -25,7 +25,7 @@ public abstract class BaseFx implements Fx
 	protected final List<String> names;
 	@Override public List<String> getNames() { return this.names; }
 	
-	public BaseFx(String id, boolean visual, boolean sound, Map<String, Integer> alias2datas, String description, String... names)
+	public FxAbstract(String id, boolean visual, boolean sound, Map<String, Integer> alias2datas, String description, String... names)
 	{
 		this.id = id;
 		this.visual = visual;

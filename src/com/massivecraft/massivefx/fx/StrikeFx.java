@@ -3,7 +3,7 @@ package com.massivecraft.massivefx.fx;
 import java.util.Map;
 import org.bukkit.Location;
 
-public class StrikeFx extends BaseFx
+public class StrikeFx extends FxAbstract
 {
 	private StrikeFx(String id, boolean visual, boolean sound, Map<String, Integer> alias2datas, String description, String... names)
 	{

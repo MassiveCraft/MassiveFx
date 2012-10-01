@@ -1,6 +1,6 @@
 package com.massivecraft.massivefx.cmd;
 
-import com.massivecraft.massivefx.Conf;
+import com.massivecraft.massivefx.ConfServer;
 import com.massivecraft.mcore4.cmd.HelpCommand;
 
 public class FxBasecommand extends FxCommand
@@ -8,7 +8,7 @@ public class FxBasecommand extends FxCommand
 	public FxBasecommand()
 	{
 		super();
-		this.addAliases(Conf.aliases);
+		this.addAliases(ConfServer.aliases);
 		this.addSubCommand(HelpCommand.getInstance());
 		this.addSubCommand(new CmdFxList());
 		this.addSubCommand(new CmdSelectorList());

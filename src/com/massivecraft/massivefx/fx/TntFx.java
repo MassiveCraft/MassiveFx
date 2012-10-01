@@ -6,7 +6,7 @@ import org.bukkit.Location;
 
 import com.massivecraft.mcore4.util.SmokeUtil;
 
-public class TntFx extends BaseFx
+public class TntFx extends FxAbstract
 {
 	private TntFx(String id, boolean visual, boolean sound, Map<String, Integer> alias2datas, String description, String... names)
 	{

@@ -17,12 +17,4 @@ public abstract class FxCommand extends MCommand
 	{
 		return P.p;
 	}
-	
-	/*public GPlayer gme;
-	@Override
-	public void fixSenderVars()
-	{
-		this.gme = GPlayers.i.get(this.me);
-	}*/
-	
 }

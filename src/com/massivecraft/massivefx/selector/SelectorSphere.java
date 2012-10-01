@@ -8,7 +8,7 @@ import org.bukkit.block.Block;
 
 import com.massivecraft.massivefx.P;
 
-public class SelectorSphere extends BaseSelector
+public class SelectorSphere extends SelectorAbstract
 {
 	public Collection<Object> getSelection(String data, Object origin)
 	{
@@ -20,9 +20,9 @@ public class SelectorSphere extends BaseSelector
 			radius = Integer.parseInt(data);
 		}
 		catch (Exception e){}
-		if (radius > 4)
+		if (radius > 5)
 		{
-			radius = 4;
+			radius = 5;
 		}
 		
 		Location originLocation = P.p.getLocation(origin);

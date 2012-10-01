@@ -10,7 +10,7 @@ import com.massivecraft.massivefx.P;
 import com.massivecraft.mcore4.MCore;
 import com.massivecraft.mcore4.util.IntervalUtil;
 
-public class SelectorMove extends BaseSelector
+public class SelectorMove extends SelectorAbstract
 {
 	protected final BlockFace face;
 	protected final static BlockFace[] faces = {BlockFace.NORTH, BlockFace.EAST, BlockFace.SOUTH, BlockFace.WEST, BlockFace.UP, BlockFace.DOWN, BlockFace.NORTH_EAST, BlockFace.NORTH_WEST, BlockFace.SOUTH_EAST, BlockFace.SOUTH_WEST};

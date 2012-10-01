@@ -6,10 +6,10 @@ import java.util.TreeMap;
 import org.bukkit.Effect;
 import org.bukkit.Location;
 
-import com.massivecraft.massivefx.Conf;
+import com.massivecraft.massivefx.Const;
 
 
-public class VanillaFx extends BaseFx
+public class VanillaFx extends FxAbstract
 {
 	protected final Effect bukkitEffect;
 	
@@ -22,7 +22,7 @@ public class VanillaFx extends BaseFx
 	@Override
 	public void playAt(Location location, int data)
 	{
-		location.getWorld().playEffect(location, this.bukkitEffect, data, Conf.fxBlockViewDistanceLimited);
+		location.getWorld().playEffect(location, this.bukkitEffect, data, Const.fxBlockViewDistanceLimited);
 	}
 	
 	protected final static Map<String, Integer> recordAlias;

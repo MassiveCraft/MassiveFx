@@ -6,7 +6,7 @@ import java.util.Collection;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
-public class SelectorPlayer extends BaseSelector
+public class SelectorPlayer extends SelectorAbstract
 {	
 	public Collection<Object> getSelection(String data, Object origin)
 	{
@@ -14,7 +14,7 @@ public class SelectorPlayer extends BaseSelector
 		
 		for (String playerName : data.split("\\s*,\\s*"))
 		{
-			Player player = Bukkit.getServer().getPlayer(playerName);
+			Player player = Bukkit.getPlayerExact(playerName);
 			if (player != null)
 			{
 				ret.add(player);

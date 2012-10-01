@@ -6,7 +6,7 @@ import java.util.Collection;
 import org.bukkit.Location;
 import org.bukkit.entity.Entity;
 
-public class SelectorHere extends BaseSelector
+public class SelectorHere extends SelectorAbstract
 {
 	public Collection<Object> getSelection(String data, Object origin)
 	{

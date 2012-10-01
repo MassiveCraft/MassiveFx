@@ -8,9 +8,9 @@ import org.bukkit.block.Block;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.util.BlockIterator;
 
-import com.massivecraft.massivefx.Conf;
+import com.massivecraft.massivefx.Const;
 
-public class SelectorThere extends BaseSelector
+public class SelectorThere extends SelectorAbstract
 {
 	public Collection<Object> getSelection(String data, Object origin)
 	{
@@ -32,7 +32,7 @@ public class SelectorThere extends BaseSelector
 		
 		Block previous = livingEntity.getEyeLocation().getBlock();
 		Block current = null;
-		BlockIterator itr = new BlockIterator(livingEntity, Conf.fxBlockViewDistanceUnlimited);
+		BlockIterator itr = new BlockIterator(livingEntity, Const.fxBlockViewDistanceUnlimited);
 		while (itr.hasNext())
 		{
 			current = itr.next();

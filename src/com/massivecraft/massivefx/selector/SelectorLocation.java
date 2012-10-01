@@ -9,7 +9,7 @@ import org.bukkit.World;
 
 import com.massivecraft.mcore4.util.IntervalUtil;
 
-public class SelectorLocation extends BaseSelector
+public class SelectorLocation extends SelectorAbstract
 {
 	public Collection<Object> getSelection(String data, Object origin)
 	{

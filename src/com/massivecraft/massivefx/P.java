@@ -51,7 +51,7 @@ public class P extends MPlugin
 		if ( ! preEnable()) return;
 		
 		// Load Conf from disk
-		Conf.load();
+		ConfServer.i.load();
 		
 		// Add Base Commands
 		this.fxBasecommand = new FxBasecommand();

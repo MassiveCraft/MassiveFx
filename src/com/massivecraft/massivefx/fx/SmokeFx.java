@@ -8,10 +8,10 @@ import java.util.Random;
 import org.bukkit.Effect;
 import org.bukkit.Location;
 
-import com.massivecraft.massivefx.Conf;
+import com.massivecraft.massivefx.Const;
 import com.massivecraft.massivefx.P;
 
-public class SmokeFx extends BaseFx
+public class SmokeFx extends FxAbstract
 {
 	private SmokeFx(String id, boolean visual, boolean sound, Map<String, Integer> alias2datas, String description, String... names)
 	{
@@ -112,7 +112,7 @@ public class SmokeFx extends BaseFx
 	public static void spawnSingle(Location location, int direction)
 	{
 		if (location == null) return;
-		location.getWorld().playEffect(location, Effect.SMOKE, direction, Conf.fxBlockViewDistanceLimited);
+		location.getWorld().playEffect(location, Effect.SMOKE, direction, Const.fxBlockViewDistanceLimited);
 	}
 	
 	public static void spawnSingleRandom(Location location)

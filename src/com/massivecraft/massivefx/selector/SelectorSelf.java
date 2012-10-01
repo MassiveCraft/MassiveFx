@@ -3,7 +3,7 @@ package com.massivecraft.massivefx.selector;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class SelectorSelf extends BaseSelector
+public class SelectorSelf extends SelectorAbstract
 {
 	public Collection<Object> getSelection(String data, Object origin)
 	{
