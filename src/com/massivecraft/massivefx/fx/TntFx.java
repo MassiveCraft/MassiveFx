@@ -4,7 +4,7 @@ import java.util.Map;
 
 import org.bukkit.Location;
 
-import com.massivecraft.mcore4.util.SmokeUtil;
+import com.massivecraft.mcore5.util.SmokeUtil;
 
 public class TntFx extends FxAbstract
 {
