@@ -49,6 +49,6 @@ public class CmdFxList extends FxCommand
 		}
 		
 		lines = Txt.parseWrap(lines);
-		this.sendMessage(Txt.getPage(lines, pageHumanBased, "Available FX"));
+		this.sendMessage(Txt.getPage(lines, pageHumanBased, "Available FX", sender));
 	}
 }

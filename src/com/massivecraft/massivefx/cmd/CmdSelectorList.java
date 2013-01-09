@@ -52,6 +52,6 @@ public class CmdSelectorList extends FxCommand
 		}
 		
 		lines = Txt.parseWrap(lines);
-		this.sendMessage(Txt.getPage(lines, pageHumanBased, "Available Selectors"));
+		this.sendMessage(Txt.getPage(lines, pageHumanBased, "Available Selectors", sender));
 	}
 }
