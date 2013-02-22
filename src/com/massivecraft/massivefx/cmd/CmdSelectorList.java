@@ -6,11 +6,12 @@ import java.util.List;
 import com.massivecraft.massivefx.P;
 import com.massivecraft.massivefx.Permission;
 import com.massivecraft.massivefx.selector.Selector;
+import com.massivecraft.mcore5.cmd.MCommand;
 import com.massivecraft.mcore5.cmd.arg.ARInteger;
 import com.massivecraft.mcore5.cmd.req.ReqHasPerm;
 import com.massivecraft.mcore5.util.Txt;
 
-public class CmdSelectorList extends FxCommand
+public class CmdSelectorList extends MCommand
 {
 	public CmdSelectorList()
 	{

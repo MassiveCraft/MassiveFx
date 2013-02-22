@@ -55,7 +55,7 @@ public class P extends MPlugin
 		
 		// Add Base Commands
 		this.fxBasecommand = new FxBasecommand();
-		this.fxBasecommand.register();
+		this.fxBasecommand.register(this);
 		
 		// Register Fx
 		this.registerFx(VanillaFx.POTION_BREAK);
