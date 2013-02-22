@@ -2,7 +2,7 @@ package com.massivecraft.massivefx;
 
 import org.bukkit.command.CommandSender;
 
-import com.massivecraft.mcore5.util.PermUtil;
+import com.massivecraft.mcore.util.PermUtil;
 
 public enum Permission
 {

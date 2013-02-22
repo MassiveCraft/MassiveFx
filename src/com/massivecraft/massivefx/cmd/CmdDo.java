@@ -2,8 +2,8 @@ package com.massivecraft.massivefx.cmd;
 
 import com.massivecraft.massivefx.P;
 import com.massivecraft.massivefx.Permission;
-import com.massivecraft.mcore5.cmd.MCommand;
-import com.massivecraft.mcore5.cmd.req.ReqHasPerm;
+import com.massivecraft.mcore.cmd.MCommand;
+import com.massivecraft.mcore.cmd.req.ReqHasPerm;
 
 public class CmdDo extends MCommand
 {

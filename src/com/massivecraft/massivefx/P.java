@@ -29,8 +29,8 @@ import com.massivecraft.massivefx.selector.SelectorPlayer;
 import com.massivecraft.massivefx.selector.SelectorSelf;
 import com.massivecraft.massivefx.selector.SelectorSphere;
 import com.massivecraft.massivefx.selector.SelectorThere;
-import com.massivecraft.mcore5.MPlugin;
-import com.massivecraft.mcore5.util.Txt;
+import com.massivecraft.mcore.MPlugin;
+import com.massivecraft.mcore.util.Txt;
 
 public class P extends MPlugin
 {

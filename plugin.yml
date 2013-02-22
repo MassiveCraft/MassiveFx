@@ -1,7 +1,7 @@
 name: massivefx
 version: 1.0.2
 main: com.massivecraft.massivefx.P
-depend: [mcore5]
+depend: [mcore]
 permissions:
   massivefx.*:
     children:
