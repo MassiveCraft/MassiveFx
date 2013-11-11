@@ -9,7 +9,6 @@ public class CmdDo extends MCommand
 {
 	public CmdDo()
 	{
-		super();
 		this.addAliases("do");
 		this.addRequiredArg("effect");
 		this.addOptionalArg("selector", "there");

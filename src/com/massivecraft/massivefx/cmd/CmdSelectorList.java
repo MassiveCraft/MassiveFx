@@ -15,7 +15,6 @@ public class CmdSelectorList extends MCommand
 {
 	public CmdSelectorList()
 	{
-		super();
 		this.addAliases("sl","selectorlist");
 		this.addOptionalArg("page", "1");
 		this.addRequirements(new ReqHasPerm(Permission.SELECTOR_LIST.node));

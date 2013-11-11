@@ -15,7 +15,6 @@ public class CmdFxList extends MCommand
 {
 	public CmdFxList()
 	{
-		super();
 		this.addAliases("fl","fxlist");
 		this.addOptionalArg("page", "1");
 		this.addRequirements(new ReqHasPerm(Permission.FX_LIST.node));
