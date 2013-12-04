@@ -30,7 +30,7 @@ public class CmdFxList extends MCommand
 		lines.add("<a># <i>There is one FX per line in this list.");
 		lines.add("<a># <i>S = Sound, V = Visual, D = Data");
 		
-		for(Fx fx: P.p.getFxs())
+		for (Fx fx: P.p.getFxs())
 		{
 			StringBuilder sb = new StringBuilder();
 			
