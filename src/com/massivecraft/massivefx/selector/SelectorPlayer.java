@@ -3,8 +3,9 @@ package com.massivecraft.massivefx.selector;
 import java.util.ArrayList;
 import java.util.Collection;
 
-import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
+
+import com.massivecraft.mcore.util.IdUtil;
 
 public class SelectorPlayer extends SelectorAbstract
 {	
@@ -14,7 +15,7 @@ public class SelectorPlayer extends SelectorAbstract
 		
 		for (String playerName : data.split("\\s*,\\s*"))
 		{
-			Player player = Bukkit.getPlayerExact(playerName);
+			Player player = IdUtil.getPlayer(playerName);
 			if (player != null)
 			{
 				ret.add(player);
