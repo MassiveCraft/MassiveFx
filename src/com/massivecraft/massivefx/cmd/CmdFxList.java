@@ -3,15 +3,15 @@ package com.massivecraft.massivefx.cmd;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.massivecraft.massivecore.cmd.MassiveCommand;
+import com.massivecraft.massivecore.cmd.arg.ARInteger;
+import com.massivecraft.massivecore.cmd.req.ReqHasPerm;
+import com.massivecraft.massivecore.util.Txt;
 import com.massivecraft.massivefx.P;
 import com.massivecraft.massivefx.Permission;
 import com.massivecraft.massivefx.fx.Fx;
-import com.massivecraft.mcore.cmd.MCommand;
-import com.massivecraft.mcore.cmd.arg.ARInteger;
-import com.massivecraft.mcore.cmd.req.ReqHasPerm;
-import com.massivecraft.mcore.util.Txt;
 
-public class CmdFxList extends MCommand
+public class CmdFxList extends MassiveCommand
 {
 	public CmdFxList()
 	{

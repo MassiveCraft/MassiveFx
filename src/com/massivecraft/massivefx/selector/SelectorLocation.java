@@ -7,7 +7,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
 
-import com.massivecraft.mcore.util.IntervalUtil;
+import com.massivecraft.massivecore.util.IntervalUtil;
 
 public class SelectorLocation extends SelectorAbstract
 {

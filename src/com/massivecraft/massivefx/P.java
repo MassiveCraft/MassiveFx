@@ -13,6 +13,8 @@ import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Entity;
 
+import com.massivecraft.massivecore.MassivePlugin;
+import com.massivecraft.massivecore.util.Txt;
 import com.massivecraft.massivefx.cmd.FxBasecommand;
 import com.massivecraft.massivefx.fx.Fx;
 import com.massivecraft.massivefx.fx.SmokeFx;
@@ -29,10 +31,8 @@ import com.massivecraft.massivefx.selector.SelectorPlayer;
 import com.massivecraft.massivefx.selector.SelectorSelf;
 import com.massivecraft.massivefx.selector.SelectorSphere;
 import com.massivecraft.massivefx.selector.SelectorThere;
-import com.massivecraft.mcore.MPlugin;
-import com.massivecraft.mcore.util.Txt;
 
-public class P extends MPlugin
+public class P extends MassivePlugin
 {
 	// Our single plugin instance
 	public static P p;

@@ -5,7 +5,7 @@ import java.util.Collection;
 
 import org.bukkit.entity.Player;
 
-import com.massivecraft.mcore.util.IdUtil;
+import com.massivecraft.massivecore.util.IdUtil;
 
 public class SelectorPlayer extends SelectorAbstract
 {	

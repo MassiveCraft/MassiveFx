@@ -6,9 +6,9 @@ import java.util.Collection;
 import org.bukkit.Location;
 import org.bukkit.block.BlockFace;
 
+import com.massivecraft.massivecore.MassiveCore;
+import com.massivecraft.massivecore.util.IntervalUtil;
 import com.massivecraft.massivefx.P;
-import com.massivecraft.mcore.MCore;
-import com.massivecraft.mcore.util.IntervalUtil;
 
 public class SelectorMove extends SelectorAbstract
 {
@@ -18,7 +18,7 @@ public class SelectorMove extends SelectorAbstract
 	{
 		if (this.face == null)
 		{
-			return faces[MCore.random.nextInt(faces.length)];
+			return faces[MassiveCore.random.nextInt(faces.length)];
 		}
 		return this.face;
 	}

@@ -2,8 +2,8 @@ package com.massivecraft.massivefx;
 
 import java.util.List;
 
-import com.massivecraft.mcore.SimpleConfig;
-import com.massivecraft.mcore.util.MUtil;
+import com.massivecraft.massivecore.SimpleConfig;
+import com.massivecraft.massivecore.util.MUtil;
 
 public class ConfServer extends SimpleConfig
 {
