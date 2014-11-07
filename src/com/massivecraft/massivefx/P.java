@@ -50,9 +50,6 @@ public class P extends MassivePlugin
 	{
 		if ( ! preEnable()) return;
 		
-		// Load Conf from disk
-		ConfServer.i.load();
-		
 		// Add Base Commands
 		this.fxBasecommand = new FxBasecommand();
 		this.fxBasecommand.register();
