@@ -14,17 +14,30 @@ import com.massivecraft.massivefx.fx.Fx;
 
 public class CmdFxList extends MassiveCommand
 {
+	// -------------------------------------------- //
+	// CONSTRUCT
+	// -------------------------------------------- //
+	
 	public CmdFxList()
 	{
-		this.addAliases("fl","fxlist");
-		this.addOptionalArg("page", "1");
+		// Aliases
+		this.addAliases("fl", "fxlist");
+		
+		// Args
+		this.addArg(ARInteger.get(), "page", "1");
+		
+		// Requirements
 		this.addRequirements(new ReqHasPerm(Permission.FX_LIST.node));
 	}
+	
+	// -------------------------------------------- //
+	// OVERRIDE
+	// -------------------------------------------- //
 	
 	@Override
 	public void perform() throws MassiveException
 	{
-		Integer pageHumanBased = this.arg(0, ARInteger.get(), 1);
+		int pageHumanBased = this.readArg(1);
 		
 		List<String> lines = new ArrayList<String>();
 		lines.add("<a># <i>There is one FX per line in this list.");
@@ -51,4 +64,5 @@ public class CmdFxList extends MassiveCommand
 		lines = Txt.parseWrap(lines);
 		this.sendMessage(Txt.getPage(lines, pageHumanBased, "Available FX", sender));
 	}
+	
 }

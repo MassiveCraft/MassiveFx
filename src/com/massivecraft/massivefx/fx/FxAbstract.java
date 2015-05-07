@@ -68,4 +68,5 @@ public abstract class FxAbstract implements Fx
 		catch (Exception e){}
 		return idata;
 	}
+	
 }

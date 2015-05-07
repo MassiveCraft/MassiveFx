@@ -12,29 +12,41 @@ import com.massivecraft.massivefx.P;
 import com.massivecraft.massivefx.Permission;
 import com.massivecraft.massivefx.selector.Selector;
 
-public class CmdSelectorList extends MassiveCommand
+public class CmdFxSelectorList extends MassiveCommand
 {
-	public CmdSelectorList()
+	// -------------------------------------------- //
+	// CONSTRUCT
+	// -------------------------------------------- //
+	
+	public CmdFxSelectorList()
 	{
-		this.addAliases("sl","selectorlist");
-		this.addOptionalArg("page", "1");
+		// Aliases
+		this.addAliases("sl", "selectorlist");
+		
+		// Args
+		this.addArg(ARInteger.get(), "page", "1");
+		
+		// Requirements
 		this.addRequirements(new ReqHasPerm(Permission.SELECTOR_LIST.node));
 	}
+	
+	// -------------------------------------------- //
+	// OVERRIDE
+	// -------------------------------------------- //
 	
 	@Override
 	public void perform() throws MassiveException
 	{
-		Integer pageHumanBased = this.arg(0, ARInteger.get(), 1);
+		int pageHumanBased = this.readArg(1);
 		
 		List<String> lines = new ArrayList<String>();
 		lines.add("<a># <i>There is one selector per line in this list.");
 		lines.add("<a># <i>Selectors have data after a colon like sphere:2");
 		lines.add("<a># <i>Chain selectors using dots like there.sphere:3");
 		
-		for(Selector selector: P.p.getSelectors())
+		for (Selector selector: P.p.getSelectors())
 		{
 			StringBuilder sb = new StringBuilder();
-			
 			
 			sb.append("<h>");
 			sb.append(selector.getId());
@@ -54,4 +66,5 @@ public class CmdSelectorList extends MassiveCommand
 		lines = Txt.parseWrap(lines);
 		this.sendMessage(Txt.getPage(lines, pageHumanBased, "Available Selectors", sender));
 	}
+	
 }

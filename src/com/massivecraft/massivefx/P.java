@@ -15,7 +15,7 @@ import org.bukkit.entity.Entity;
 
 import com.massivecraft.massivecore.MassivePlugin;
 import com.massivecraft.massivecore.util.Txt;
-import com.massivecraft.massivefx.cmd.FxBasecommand;
+import com.massivecraft.massivefx.cmd.CmdFx;
 import com.massivecraft.massivefx.fx.Fx;
 import com.massivecraft.massivefx.fx.SmokeFx;
 import com.massivecraft.massivefx.fx.StrikeFx;
@@ -38,7 +38,7 @@ public class P extends MassivePlugin
 	public static P p;
 	
 	// Command
-	public FxBasecommand fxBasecommand;
+	public CmdFx fxBasecommand;
 	
 	public P()
 	{
@@ -51,7 +51,7 @@ public class P extends MassivePlugin
 		if ( ! preEnable()) return;
 		
 		// Add Base Commands
-		this.fxBasecommand = new FxBasecommand();
+		this.fxBasecommand = new CmdFx();
 		this.fxBasecommand.register(this);
 		
 		// Register Fx
