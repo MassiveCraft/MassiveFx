@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.massivecraft.massivecore.MassiveException;
+import com.massivecraft.massivecore.cmd.ArgSetting;
 import com.massivecraft.massivecore.cmd.MassiveCommand;
-import com.massivecraft.massivecore.cmd.arg.ARInteger;
 import com.massivecraft.massivecore.cmd.req.ReqHasPerm;
 import com.massivecraft.massivecore.util.Txt;
 import com.massivecraft.massivefx.P;
@@ -24,7 +24,7 @@ public class CmdFxList extends MassiveCommand
 		this.addAliases("fl", "fxlist");
 		
 		// Args
-		this.addArg(ARInteger.get(), "page", "1");
+		this.addArg(ArgSetting.getPage());
 		
 		// Requirements
 		this.addRequirements(new ReqHasPerm(Permission.FX_LIST.node));
@@ -37,7 +37,7 @@ public class CmdFxList extends MassiveCommand
 	@Override
 	public void perform() throws MassiveException
 	{
-		int pageHumanBased = this.readArg(1);
+		int page = this.readArg();
 		
 		List<String> lines = new ArrayList<String>();
 		lines.add("<a># <i>There is one FX per line in this list.");
@@ -62,7 +62,7 @@ public class CmdFxList extends MassiveCommand
 		}
 		
 		lines = Txt.parseWrap(lines);
-		this.sendMessage(Txt.getPage(lines, pageHumanBased, "Available FX", sender));
+		this.sendMessage(Txt.getPage(lines, page, "Available FX", sender));
 	}
 	
 }
