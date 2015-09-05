@@ -62,7 +62,7 @@ public class CmdFxList extends MassiveCommand
 		}
 		
 		lines = Txt.parseWrap(lines);
-		this.message(Txt.getPage(lines, page, "Available FX", sender));
+		this.message(Txt.getPage(lines, page, "Available FX", this));
 	}
 	
 }

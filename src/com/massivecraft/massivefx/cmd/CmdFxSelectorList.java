@@ -64,7 +64,7 @@ public class CmdFxSelectorList extends MassiveCommand
 		}
 		
 		lines = Txt.parseWrap(lines);
-		this.message(Txt.getPage(lines, page, "Available Selectors", sender));
+		this.message(Txt.getPage(lines, page, "Available Selectors", this));
 	}
 	
 }
