@@ -13,10 +13,10 @@ public class CmdFx extends MassiveCommand
 		// Aliases
 		this.addAliases("fx");
 		
-		// SubCommands
-		this.addSubCommand(new CmdFxList());
-		this.addSubCommand(new CmdFxSelectorList());
-		this.addSubCommand(new CmdFxDo());
+		// Children
+		this.addChild(new CmdFxList());
+		this.addChild(new CmdFxSelectorList());
+		this.addChild(new CmdFxDo());
 	}
 
 }

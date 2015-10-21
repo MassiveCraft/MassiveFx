@@ -2,8 +2,8 @@ package com.massivecraft.massivefx.cmd;
 
 import com.massivecraft.massivecore.MassiveException;
 import com.massivecraft.massivecore.cmd.MassiveCommand;
-import com.massivecraft.massivecore.cmd.arg.ARString;
 import com.massivecraft.massivecore.cmd.req.ReqHasPerm;
+import com.massivecraft.massivecore.cmd.type.TypeString;
 import com.massivecraft.massivefx.P;
 import com.massivecraft.massivefx.Permission;
 
@@ -18,9 +18,9 @@ public class CmdFxDo extends MassiveCommand
 		// Aliases
 		this.addAliases("do");
 		
-		// Args
-		this.addArg(ARString.get(), "effect");
-		this.addArg(ARString.get(), "selector", "there");
+		// Parameters
+		this.addParameter(TypeString.get(), "effect");
+		this.addParameter(TypeString.get(), "selector", "there");
 		
 		// Requirements
 		this.addRequirements(new ReqHasPerm(Permission.DO.node));

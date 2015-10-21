@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.massivecraft.massivecore.MassiveException;
-import com.massivecraft.massivecore.cmd.ArgSetting;
+import com.massivecraft.massivecore.cmd.Parameter;
 import com.massivecraft.massivecore.cmd.MassiveCommand;
 import com.massivecraft.massivecore.cmd.req.ReqHasPerm;
 import com.massivecraft.massivecore.util.Txt;
@@ -23,8 +23,8 @@ public class CmdFxSelectorList extends MassiveCommand
 		// Aliases
 		this.addAliases("sl", "selectorlist");
 		
-		// Args
-		this.addArg(ArgSetting.getPage());
+		// Parameters
+		this.addParameter(Parameter.getPage());
 		
 		// Requirements
 		this.addRequirements(new ReqHasPerm(Permission.SELECTOR_LIST.node));
