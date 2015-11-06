@@ -1,9 +1,9 @@
 package com.massivecraft.massivefx.cmd;
 
 import com.massivecraft.massivecore.MassiveException;
-import com.massivecraft.massivecore.cmd.MassiveCommand;
-import com.massivecraft.massivecore.cmd.req.ReqHasPerm;
-import com.massivecraft.massivecore.cmd.type.TypeString;
+import com.massivecraft.massivecore.command.MassiveCommand;
+import com.massivecraft.massivecore.command.requirement.RequirementHasPerm;
+import com.massivecraft.massivecore.command.type.primitive.TypeString;
 import com.massivecraft.massivefx.P;
 import com.massivecraft.massivefx.Permission;
 
@@ -23,7 +23,7 @@ public class CmdFxDo extends MassiveCommand
 		this.addParameter(TypeString.get(), "selector", "there");
 		
 		// Requirements
-		this.addRequirements(new ReqHasPerm(Permission.DO.node));
+		this.addRequirements(new RequirementHasPerm(Permission.DO.node));
 	}
 	
 	// -------------------------------------------- //
