@@ -32,27 +32,28 @@ import com.massivecraft.massivefx.selector.SelectorSelf;
 import com.massivecraft.massivefx.selector.SelectorSphere;
 import com.massivecraft.massivefx.selector.SelectorThere;
 
-public class P extends MassivePlugin
+public class MassiveFx extends MassivePlugin
 {
-	// Our single plugin instance
-	public static P p;
+	// -------------------------------------------- //
+	// INSTANCE & CONSTRUCT
+	// -------------------------------------------- //
 	
-	// Command
-	public CmdFx fxBasecommand;
+	private static MassiveFx i;
+	public static MassiveFx get() { return i; }
+	public MassiveFx() { MassiveFx.i = this; }
 	
-	public P()
-	{
-		P.p = this;
-	}
+	// -------------------------------------------- //
+	// OVERRIDE
+	// -------------------------------------------- //
 	
 	@Override
-	public void onEnable()
+	public void onEnableInner()
 	{
-		if ( ! preEnable()) return;
-		
-		// Add Base Commands
-		this.fxBasecommand = new CmdFx();
-		this.fxBasecommand.register(this);
+		// Activate
+		this.activate(
+			// Command 
+			CmdFx.get()
+		);
 		
 		// Register Fx
 		this.registerFx(VanillaFx.POTION_BREAK);
@@ -96,8 +97,6 @@ public class P extends MassivePlugin
 		
 		// Register Locators
 		this.registerLocator(LocatorHumanEntity.getInstance());
-		
-		postEnable();
 	}
 	
 	// -------------------------------------------- //
@@ -390,7 +389,7 @@ public class P extends MassivePlugin
 		List<Entry<Fx, String>> fxDatas;
 		try
 		{
-			fxDatas = P.p.parseMultiFxString(what);
+			fxDatas = this.parseMultiFxString(what);
 		}
 		catch (Exception e)
 		{
@@ -401,7 +400,7 @@ public class P extends MassivePlugin
 		List<Entry<Selector, String>> selectorDatas;
 		try
 		{
-			selectorDatas = P.p.parseMultiSelectorString(where);
+			selectorDatas = this.parseMultiSelectorString(where);
 		}
 		catch (Exception e)
 		{
@@ -423,11 +422,11 @@ public class P extends MassivePlugin
 		{
 			Selector selector = selectorData.getKey();
 			String data = selectorData.getValue();
-			targets = P.p.applySelector(selector, data, targets);
+			targets = this.applySelector(selector, data, targets);
 		}
 		
 		// Where are the Locations?
-		List<Location> locations = P.p.getLocations(targets);
+		List<Location> locations = this.getLocations(targets);
 		
 		// Play them
 		for(Entry<Fx, String> fxData : fxDatas)

@@ -5,6 +5,13 @@ import com.massivecraft.massivecore.command.MassiveCommand;
 public class CmdFx extends MassiveCommand
 {
 	// -------------------------------------------- //
+	// INSTANCE
+	// -------------------------------------------- //
+	
+	private static CmdFx i = new CmdFx();
+	public static CmdFx get() { return i; }
+	
+	// -------------------------------------------- //
 	// CONSTRUCT
 	// -------------------------------------------- //
 	

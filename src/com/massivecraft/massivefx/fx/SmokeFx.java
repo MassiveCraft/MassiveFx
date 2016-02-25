@@ -9,7 +9,7 @@ import org.bukkit.Effect;
 import org.bukkit.Location;
 
 import com.massivecraft.massivefx.Const;
-import com.massivecraft.massivefx.P;
+import com.massivecraft.massivefx.MassiveFx;
 
 public class SmokeFx extends FxAbstract
 {
@@ -32,7 +32,7 @@ public class SmokeFx extends FxAbstract
 		if(first == 'r') 
 		{
 			// Random!
-			Entry<String, String> randomAndCountstring = P.nameDataSplit(dataString);
+			Entry<String, String> randomAndCountstring = MassiveFx.nameDataSplit(dataString);
 			String countstring = randomAndCountstring.getValue();
 			if (countstring != null)
 			{

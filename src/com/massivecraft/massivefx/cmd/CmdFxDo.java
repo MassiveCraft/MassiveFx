@@ -4,7 +4,7 @@ import com.massivecraft.massivecore.MassiveException;
 import com.massivecraft.massivecore.command.MassiveCommand;
 import com.massivecraft.massivecore.command.requirement.RequirementHasPerm;
 import com.massivecraft.massivecore.command.type.primitive.TypeString;
-import com.massivecraft.massivefx.P;
+import com.massivecraft.massivefx.MassiveFx;
 import com.massivecraft.massivefx.Permission;
 
 public class CmdFxDo extends MassiveCommand
@@ -36,7 +36,7 @@ public class CmdFxDo extends MassiveCommand
 		String what = this.readArg();
 		String where = this.readArg("there");
 				
-		String error = P.p.performEffect(what, where, me);
+		String error = MassiveFx.get().performEffect(what, where, me);
 		
 		if (error != null)
 		{

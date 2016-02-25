@@ -6,7 +6,7 @@ import java.util.Collection;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 
-import com.massivecraft.massivefx.P;
+import com.massivecraft.massivefx.MassiveFx;
 
 public class SelectorSphere extends SelectorAbstract
 {
@@ -25,7 +25,7 @@ public class SelectorSphere extends SelectorAbstract
 			radius = 5;
 		}
 		
-		Location originLocation = P.p.getLocation(origin);
+		Location originLocation = MassiveFx.get().getLocation(origin);
 		
 		if (originLocation == null) return ret;
 		Block centerBlock = originLocation.getBlock();

@@ -8,7 +8,7 @@ import com.massivecraft.massivecore.command.MassiveCommand;
 import com.massivecraft.massivecore.command.Parameter;
 import com.massivecraft.massivecore.command.requirement.RequirementHasPerm;
 import com.massivecraft.massivecore.util.Txt;
-import com.massivecraft.massivefx.P;
+import com.massivecraft.massivefx.MassiveFx;
 import com.massivecraft.massivefx.Permission;
 import com.massivecraft.massivefx.selector.Selector;
 
@@ -44,7 +44,7 @@ public class CmdFxSelectorList extends MassiveCommand
 		lines.add("<a># <i>Selectors have data after a colon like sphere:2");
 		lines.add("<a># <i>Chain selectors using dots like there.sphere:3");
 		
-		for (Selector selector: P.p.getSelectors())
+		for (Selector selector: MassiveFx.get().getSelectors())
 		{
 			StringBuilder sb = new StringBuilder();
 			

@@ -8,7 +8,7 @@ import org.bukkit.block.BlockFace;
 
 import com.massivecraft.massivecore.MassiveCore;
 import com.massivecraft.massivecore.util.IntervalUtil;
-import com.massivecraft.massivefx.P;
+import com.massivecraft.massivefx.MassiveFx;
 
 public class SelectorMove extends SelectorAbstract
 {
@@ -35,7 +35,7 @@ public class SelectorMove extends SelectorAbstract
 		BlockFace face = this.getFace();
 		double length = IntervalUtil.randomDoubleFromInterval(data, 1d);
 		
-		for (Location location : P.p.getLocations(origin))
+		for (Location location : MassiveFx.get().getLocations(origin))
 		{
 			Location newLocation = location.clone();
 			newLocation.add(face.getModX()*length, face.getModY()*length, face.getModZ()*length);

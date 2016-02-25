@@ -8,7 +8,7 @@ import com.massivecraft.massivecore.command.MassiveCommand;
 import com.massivecraft.massivecore.command.Parameter;
 import com.massivecraft.massivecore.command.requirement.RequirementHasPerm;
 import com.massivecraft.massivecore.util.Txt;
-import com.massivecraft.massivefx.P;
+import com.massivecraft.massivefx.MassiveFx;
 import com.massivecraft.massivefx.Permission;
 import com.massivecraft.massivefx.fx.Fx;
 
@@ -43,7 +43,7 @@ public class CmdFxList extends MassiveCommand
 		lines.add("<a># <i>There is one FX per line in this list.");
 		lines.add("<a># <i>S = Sound, V = Visual, D = Data");
 		
-		for (Fx fx: P.p.getFxs())
+		for (Fx fx: MassiveFx.get().getFxs())
 		{
 			StringBuilder sb = new StringBuilder();
 			
