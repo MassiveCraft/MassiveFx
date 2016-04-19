@@ -52,7 +52,7 @@ public class MassiveFx extends MassivePlugin
 		// Activate
 		this.activate(
 			// Command 
-			CmdFx.get()
+			CmdFx.class
 		);
 		
 		// Register Fx
