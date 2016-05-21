@@ -20,7 +20,7 @@ public enum Permission
 	
 	public boolean has(CommandSender sender, boolean informSenderIfNot)
 	{
-		return PermissionUtil.has(sender, this.node, informSenderIfNot);
+		return PermissionUtil.hasPermission(sender, this.node, informSenderIfNot);
 	}
 	
 	public boolean has(CommandSender sender)
