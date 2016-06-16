@@ -1,30 +1,51 @@
 package com.massivecraft.massivefx;
 
-import org.bukkit.command.CommandSender;
+import org.bukkit.permissions.Permissible;
 
+import com.massivecraft.massivecore.Identified;
 import com.massivecraft.massivecore.util.PermissionUtil;
 
-public enum Permission
+public enum Permission implements Identified
 {
-	FX_LIST("fxlist"),
-	SELECTOR_LIST("selectorlist"),
-	DO("do"),
+	// -------------------------------------------- //
+	// ENUM
+	// -------------------------------------------- //
+	
+	FXLIST,
+	SELECTORLIST,
+	DO,
+	
+	// END OF LIST
 	;
 	
-	public final String node;
+	// -------------------------------------------- //
+	// FIELDS
+	// -------------------------------------------- //
 	
-	Permission(final String permissionNode)
+	private final String id;
+	@Override public String getId() { return this.id; }
+	
+	// -------------------------------------------- //
+	// CONSTRUCT
+	// -------------------------------------------- //
+	
+	Permission()
 	{
-		this.node = "massivefx."+permissionNode;
+		this.id = PermissionUtil.createPermissionId(MassiveFx.get(), this);
     }
 	
-	public boolean has(CommandSender sender, boolean informSenderIfNot)
+	// -------------------------------------------- //
+	// HAS
+	// -------------------------------------------- //
+	
+	public boolean has(Permissible permissible, boolean verboose)
 	{
-		return PermissionUtil.hasPermission(sender, this.node, informSenderIfNot);
+		return PermissionUtil.hasPermission(permissible, this, verboose);
 	}
 	
-	public boolean has(CommandSender sender)
+	public boolean has(Permissible permissible)
 	{
-		return has(sender, false);
+		return PermissionUtil.hasPermission(permissible, this);
 	}
+
 }

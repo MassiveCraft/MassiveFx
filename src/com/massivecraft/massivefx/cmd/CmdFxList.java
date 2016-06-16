@@ -27,7 +27,7 @@ public class CmdFxList extends MassiveCommand
 		this.addParameter(Parameter.getPage());
 		
 		// Requirements
-		this.addRequirements(new RequirementHasPerm(Permission.FX_LIST.node));
+		this.addRequirements(new RequirementHasPerm(Permission.FXLIST));
 	}
 	
 	// -------------------------------------------- //

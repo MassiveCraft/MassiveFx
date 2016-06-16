@@ -23,7 +23,7 @@ public class CmdFxDo extends MassiveCommand
 		this.addParameter(TypeString.get(), "selector", "there");
 		
 		// Requirements
-		this.addRequirements(new RequirementHasPerm(Permission.DO.node));
+		this.addRequirements(new RequirementHasPerm(Permission.DO));
 	}
 	
 	// -------------------------------------------- //

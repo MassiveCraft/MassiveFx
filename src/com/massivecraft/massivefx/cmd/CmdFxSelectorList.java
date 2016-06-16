@@ -27,7 +27,7 @@ public class CmdFxSelectorList extends MassiveCommand
 		this.addParameter(Parameter.getPage());
 		
 		// Requirements
-		this.addRequirements(new RequirementHasPerm(Permission.SELECTOR_LIST.node));
+		this.addRequirements(new RequirementHasPerm(Permission.SELECTORLIST));
 	}
 	
 	// -------------------------------------------- //
