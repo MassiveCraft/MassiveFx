@@ -16,7 +16,7 @@ public class TntFx extends FxAbstract
 	@Override
 	public void playAt(Location location, int data)
 	{
-	    SmokeUtil.fakeExplosion(location);
+		SmokeUtil.fakeExplosion(location);
 	}
 	
 	public static final TntFx instance = new TntFx("MASSIVEFX_TNT", true, true, null, "Non-damaging tnt explosion", "tnt", "tntexplosion", "explostion");

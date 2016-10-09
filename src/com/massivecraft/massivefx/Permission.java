@@ -32,7 +32,7 @@ public enum Permission implements Identified
 	Permission()
 	{
 		this.id = PermissionUtil.createPermissionId(MassiveFx.get(), this);
-    }
+	}
 	
 	// -------------------------------------------- //
 	// HAS
