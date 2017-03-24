@@ -1,12 +1,11 @@
 package com.massivecraft.massivefx.fx;
 
-import java.util.Map;
-import java.util.TreeMap;
-
+import com.massivecraft.massivefx.Const;
 import org.bukkit.Effect;
 import org.bukkit.Location;
 
-import com.massivecraft.massivefx.Const;
+import java.util.Map;
+import java.util.TreeMap;
 
 
 public class VanillaFx extends FxAbstract

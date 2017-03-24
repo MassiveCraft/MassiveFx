@@ -1,10 +1,10 @@
 package com.massivecraft.massivefx.selector;
 
-import java.util.ArrayList;
-import java.util.Collection;
-
 import org.bukkit.Location;
 import org.bukkit.entity.Entity;
+
+import java.util.ArrayList;
+import java.util.Collection;
 
 public class SelectorHere extends SelectorAbstract
 {

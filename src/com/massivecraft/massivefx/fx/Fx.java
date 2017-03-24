@@ -1,8 +1,8 @@
 package com.massivecraft.massivefx.fx;
 
-import java.util.List;
-
 import org.bukkit.Location;
+
+import java.util.List;
 
 
 public interface Fx

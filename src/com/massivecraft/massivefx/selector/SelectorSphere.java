@@ -1,12 +1,11 @@
 package com.massivecraft.massivefx.selector;
 
-import java.util.ArrayList;
-import java.util.Collection;
-
+import com.massivecraft.massivefx.MassiveFx;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 
-import com.massivecraft.massivefx.MassiveFx;
+import java.util.ArrayList;
+import java.util.Collection;
 
 public class SelectorSphere extends SelectorAbstract
 {

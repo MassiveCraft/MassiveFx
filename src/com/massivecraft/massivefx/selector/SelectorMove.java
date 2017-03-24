@@ -1,14 +1,13 @@
 package com.massivecraft.massivefx.selector;
 
-import java.util.ArrayList;
-import java.util.Collection;
-
-import org.bukkit.Location;
-import org.bukkit.block.BlockFace;
-
 import com.massivecraft.massivecore.MassiveCore;
 import com.massivecraft.massivecore.util.IntervalUtil;
 import com.massivecraft.massivefx.MassiveFx;
+import org.bukkit.Location;
+import org.bukkit.block.BlockFace;
+
+import java.util.ArrayList;
+import java.util.Collection;
 
 public class SelectorMove extends SelectorAbstract
 {

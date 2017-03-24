@@ -1,10 +1,10 @@
 package com.massivecraft.massivefx.fx;
 
+import org.bukkit.Location;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-
-import org.bukkit.Location;
 
 public abstract class FxAbstract implements Fx
 {

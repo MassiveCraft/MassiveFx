@@ -1,18 +1,5 @@
 package com.massivecraft.massivefx;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.AbstractMap.SimpleEntry;
-import java.util.Map.Entry;
-
-import org.bukkit.Bukkit;
-import org.bukkit.Location;
-import org.bukkit.block.Block;
-import org.bukkit.entity.Entity;
-
 import com.massivecraft.massivecore.MassivePlugin;
 import com.massivecraft.massivecore.util.Txt;
 import com.massivecraft.massivefx.cmd.CmdFx;
@@ -31,6 +18,18 @@ import com.massivecraft.massivefx.selector.SelectorPlayer;
 import com.massivecraft.massivefx.selector.SelectorSelf;
 import com.massivecraft.massivefx.selector.SelectorSphere;
 import com.massivecraft.massivefx.selector.SelectorThere;
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.block.Block;
+import org.bukkit.entity.Entity;
+
+import java.util.AbstractMap.SimpleEntry;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 
 public class MassiveFx extends MassivePlugin
 {

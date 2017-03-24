@@ -1,8 +1,5 @@
 package com.massivecraft.massivefx.cmd;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.massivecraft.massivecore.MassiveException;
 import com.massivecraft.massivecore.command.MassiveCommand;
 import com.massivecraft.massivecore.command.Parameter;
@@ -11,6 +8,9 @@ import com.massivecraft.massivecore.util.Txt;
 import com.massivecraft.massivefx.MassiveFx;
 import com.massivecraft.massivefx.Permission;
 import com.massivecraft.massivefx.selector.Selector;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class CmdFxSelectorList extends MassiveCommand
 {

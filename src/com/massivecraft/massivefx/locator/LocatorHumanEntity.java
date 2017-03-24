@@ -1,11 +1,11 @@
 package com.massivecraft.massivefx.locator;
 
+import org.bukkit.Location;
+import org.bukkit.entity.HumanEntity;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-
-import org.bukkit.Location;
-import org.bukkit.entity.HumanEntity;
 
 public class LocatorHumanEntity implements Locator
 {

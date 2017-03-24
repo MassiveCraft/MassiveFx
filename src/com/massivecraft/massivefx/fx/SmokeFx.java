@@ -1,15 +1,14 @@
 package com.massivecraft.massivefx.fx;
 
-import java.util.Map;
-import java.util.TreeMap;
-import java.util.Map.Entry;
-import java.util.Random;
-
+import com.massivecraft.massivefx.Const;
+import com.massivecraft.massivefx.MassiveFx;
 import org.bukkit.Effect;
 import org.bukkit.Location;
 
-import com.massivecraft.massivefx.Const;
-import com.massivecraft.massivefx.MassiveFx;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Random;
+import java.util.TreeMap;
 
 public class SmokeFx extends FxAbstract
 {

@@ -1,9 +1,8 @@
 package com.massivecraft.massivefx;
 
-import org.bukkit.permissions.Permissible;
-
 import com.massivecraft.massivecore.Identified;
 import com.massivecraft.massivecore.util.PermissionUtil;
+import org.bukkit.permissions.Permissible;
 
 public enum Permission implements Identified
 {

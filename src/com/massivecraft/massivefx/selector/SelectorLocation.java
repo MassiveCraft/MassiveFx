@@ -1,13 +1,12 @@
 package com.massivecraft.massivefx.selector;
 
-import java.util.ArrayList;
-import java.util.Collection;
-
+import com.massivecraft.massivecore.util.IntervalUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
 
-import com.massivecraft.massivecore.util.IntervalUtil;
+import java.util.ArrayList;
+import java.util.Collection;
 
 public class SelectorLocation extends SelectorAbstract
 {

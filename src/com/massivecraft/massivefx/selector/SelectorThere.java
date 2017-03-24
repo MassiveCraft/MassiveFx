@@ -1,14 +1,13 @@
 package com.massivecraft.massivefx.selector;
 
-import java.util.ArrayList;
-import java.util.Collection;
-
+import com.massivecraft.massivefx.Const;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.util.BlockIterator;
 
-import com.massivecraft.massivefx.Const;
+import java.util.ArrayList;
+import java.util.Collection;
 
 public class SelectorThere extends SelectorAbstract
 {

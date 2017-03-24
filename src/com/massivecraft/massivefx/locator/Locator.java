@@ -1,8 +1,8 @@
 package com.massivecraft.massivefx.locator;
 
-import java.util.Collection;
-
 import org.bukkit.Location;
+
+import java.util.Collection;
 
 public interface Locator
 {

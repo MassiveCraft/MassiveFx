@@ -1,11 +1,10 @@
 package com.massivecraft.massivefx.selector;
 
-import java.util.ArrayList;
-import java.util.Collection;
-
+import com.massivecraft.massivecore.util.IdUtil;
 import org.bukkit.entity.Player;
 
-import com.massivecraft.massivecore.util.IdUtil;
+import java.util.ArrayList;
+import java.util.Collection;
 
 public class SelectorPlayer extends SelectorAbstract
 {	

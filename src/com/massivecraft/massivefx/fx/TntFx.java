@@ -1,10 +1,9 @@
 package com.massivecraft.massivefx.fx;
 
-import java.util.Map;
-
+import com.massivecraft.massivecore.util.SmokeUtil;
 import org.bukkit.Location;
 
-import com.massivecraft.massivecore.util.SmokeUtil;
+import java.util.Map;
 
 public class TntFx extends FxAbstract
 {
