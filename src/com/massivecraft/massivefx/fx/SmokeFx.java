@@ -64,7 +64,7 @@ public class SmokeFx extends FxAbstract
 	protected final static Map<String, Integer> aliases;
 	static
 	{
-		aliases = new TreeMap<String, Integer>(String.CASE_INSENSITIVE_ORDER);
+		aliases = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
 		aliases.put("0", 0);
 		aliases.put("1", 1);
 		aliases.put("2", 2);

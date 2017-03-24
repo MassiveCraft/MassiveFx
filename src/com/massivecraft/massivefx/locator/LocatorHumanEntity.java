@@ -25,7 +25,7 @@ public class LocatorHumanEntity implements Locator
 	@Override
 	public Collection<Location> getLocations(Object object)
 	{
-		List<Location> ret = new ArrayList<Location>();
+		List<Location> ret = new ArrayList<>();
 		
 		HumanEntity he = (HumanEntity)object;
 		

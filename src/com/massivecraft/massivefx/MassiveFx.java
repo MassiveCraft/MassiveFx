@@ -102,7 +102,7 @@ public class MassiveFx extends MassivePlugin
 	// FX REGISTRY
 	// -------------------------------------------- //
 	
-	protected Map<String, Fx> id2fx = new LinkedHashMap<String, Fx>();
+	protected Map<String, Fx> id2fx = new LinkedHashMap<>();
 	
 	public Collection<Fx> getFxs()
 	{
@@ -123,7 +123,7 @@ public class MassiveFx extends MassivePlugin
 	
 	public List<Fx> getFxByName(String nameStart)
 	{
-		List<Fx> ret = new ArrayList<Fx>();
+		List<Fx> ret = new ArrayList<>();
 		String nameStartFixed = nameStart.toLowerCase().replace("_", "").replace("-", "");
 		
 		for (Fx fx : id2fx.values())
@@ -144,7 +144,7 @@ public class MassiveFx extends MassivePlugin
 	// SELECTOR REGISTRY
 	// -------------------------------------------- //
 	
-	protected Map<String, Selector> id2selector = new LinkedHashMap<String, Selector>();
+	protected Map<String, Selector> id2selector = new LinkedHashMap<>();
 	
 	public Collection<Selector> getSelectors()
 	{
@@ -167,7 +167,7 @@ public class MassiveFx extends MassivePlugin
 	// LOCATOR REGISTRY
 	// -------------------------------------------- //
 	
-	protected List<Locator> locators = new ArrayList<Locator>();
+	protected List<Locator> locators = new ArrayList<>();
 	
 	public boolean registerLocator(Locator l)
 	{
@@ -206,7 +206,7 @@ public class MassiveFx extends MassivePlugin
 	
 	public Collection<Location> getLocations(Object object)
 	{
-		List<Location> ret = new ArrayList<Location>();
+		List<Location> ret = new ArrayList<>();
 		
 		if (object == null)
 		{
@@ -235,7 +235,7 @@ public class MassiveFx extends MassivePlugin
 	
 	public List<Location> getLocations(Collection<Object> objects)
 	{
-		List<Location> ret = new ArrayList<Location>();
+		List<Location> ret = new ArrayList<>();
 		for (Object object : objects)
 		{
 			ret.addAll(this.getLocations(object));
@@ -278,7 +278,7 @@ public class MassiveFx extends MassivePlugin
 			data = null;
 		}
 		
-		return new SimpleEntry<String, String>(name, data);
+		return new SimpleEntry<>(name, data);
 	}
 	
 	public Entry<Fx, String> parseSingleFxString(String singleFxString) throws Exception
@@ -310,12 +310,12 @@ public class MassiveFx extends MassivePlugin
 		}
 		Fx fx = matches.get(0);
 		
-		return new SimpleEntry<Fx, String>(fx, data);
+		return new SimpleEntry<>(fx, data);
 	}
 	
 	public List<Entry<Fx, String>> parseMultiFxString(String multiFxString) throws Exception
 	{
-		List<Entry<Fx, String>> ret = new ArrayList<Entry<Fx, String>>();
+		List<Entry<Fx, String>> ret = new ArrayList<>();
 		
 		String[] singleFxStrings = multiFxString.split("\\s*,\\s*");
 		for (String singleFxString : singleFxStrings)
@@ -351,12 +351,12 @@ public class MassiveFx extends MassivePlugin
 			throw new Exception("<b>\"<h>"+name+"<b>\" does not match any selector.");
 		}
 		
-		return new SimpleEntry<Selector, String>(selector, data);
+		return new SimpleEntry<>(selector, data);
 	}
 	
 	public List<Entry<Selector, String>> parseMultiSelectorString(String multiSelectorString) throws Exception
 	{
-		List<Entry<Selector, String>> ret = new ArrayList<Entry<Selector, String>>();
+		List<Entry<Selector, String>> ret = new ArrayList<>();
 		
 		String[] singleSelectorStrings = multiSelectorString.split("\\.");
 		for (String singleSelectorString : singleSelectorStrings)
@@ -374,7 +374,7 @@ public class MassiveFx extends MassivePlugin
 	
 	public List<Object> applySelector(Selector selector, String data, Collection<Object> origins)
 	{
-		List<Object> ret = new ArrayList<Object>();
+		List<Object> ret = new ArrayList<>();
 		for (Object origin : origins)
 		{
 			ret.addAll(selector.getSelection(data, origin));
@@ -407,7 +407,7 @@ public class MassiveFx extends MassivePlugin
 		}
 		
 		// Where are the targets?
-		List<Object> targets = new ArrayList<Object>();
+		List<Object> targets = new ArrayList<>();
 		if (origin != null)
 		{
 			targets.add(origin);

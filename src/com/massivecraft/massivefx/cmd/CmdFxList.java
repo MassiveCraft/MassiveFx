@@ -39,7 +39,7 @@ public class CmdFxList extends MassiveCommand
 	{
 		int page = this.readArg();
 		
-		List<String> lines = new ArrayList<String>();
+		List<String> lines = new ArrayList<>();
 		lines.add("<a># <i>There is one FX per line in this list.");
 		lines.add("<a># <i>S = Sound, V = Visual, D = Data");
 		

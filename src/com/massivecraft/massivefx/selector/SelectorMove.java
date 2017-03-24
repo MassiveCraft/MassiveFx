@@ -30,7 +30,7 @@ public class SelectorMove extends SelectorAbstract
 	
 	public Collection<Object> getSelection(String data, Object origin)
 	{
-		ArrayList<Object> ret = new ArrayList<Object>();
+		ArrayList<Object> ret = new ArrayList<>();
 		BlockFace face = this.getFace();
 		double length = IntervalUtil.randomDoubleFromInterval(data, 1d);
 		

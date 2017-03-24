@@ -7,7 +7,7 @@ public class SelectorSelf extends SelectorAbstract
 {
 	public Collection<Object> getSelection(String data, Object origin)
 	{
-		ArrayList<Object> ret = new ArrayList<Object>();
+		ArrayList<Object> ret = new ArrayList<>();
 		
 		if (origin == null) return ret;
 		

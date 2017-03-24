@@ -39,7 +39,7 @@ public class CmdFxSelectorList extends MassiveCommand
 	{
 		int page = this.readArg();
 		
-		List<String> lines = new ArrayList<String>();
+		List<String> lines = new ArrayList<>();
 		lines.add("<a># <i>There is one selector per line in this list.");
 		lines.add("<a># <i>Selectors have data after a colon like sphere:2");
 		lines.add("<a># <i>Chain selectors using dots like there.sphere:3");

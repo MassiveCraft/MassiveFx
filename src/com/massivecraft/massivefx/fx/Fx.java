@@ -7,12 +7,12 @@ import java.util.List;
 
 public interface Fx
 {
-	public String getId();
-	public List<String> getNames();
-	public String getDescription();
-	public boolean hasVisual();
-	public boolean hasSound();
-	public void playAt(Location location, String dataString);
-	public void playAt(Location location, int data);
-	public void playAt(Location location);
+	String getId();
+	List<String> getNames();
+	String getDescription();
+	boolean hasVisual();
+	boolean hasSound();
+	void playAt(Location location, String dataString);
+	void playAt(Location location, int data);
+	void playAt(Location location);
 }

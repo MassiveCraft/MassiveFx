@@ -4,8 +4,8 @@ import java.util.Collection;
 
 public interface Selector
 {
-	public String getId();
-	public String getDescription();
-	public String getExample();
-	public Collection<Object> getSelection(String data, Object origin);
+	String getId();
+	String getDescription();
+	String getExample();
+	Collection<Object> getSelection(String data, Object origin);
 }

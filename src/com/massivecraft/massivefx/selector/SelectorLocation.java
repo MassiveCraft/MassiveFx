@@ -12,7 +12,7 @@ public class SelectorLocation extends SelectorAbstract
 {
 	public Collection<Object> getSelection(String data, Object origin)
 	{
-		ArrayList<Object> ret = new ArrayList<Object>();
+		ArrayList<Object> ret = new ArrayList<>();
 		
 		Location location = this.locFromData(data);
 		if (location != null)

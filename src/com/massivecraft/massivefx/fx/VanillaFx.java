@@ -29,7 +29,7 @@ public class VanillaFx extends FxAbstract
 	static
 	{
 		// Alias for Vanilla Fx
-		recordAlias = new TreeMap<String, Integer>(String.CASE_INSENSITIVE_ORDER);
+		recordAlias = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
 		recordAlias.put("13", 2256);
 		recordAlias.put("cat", 2257);
 		recordAlias.put("blocks", 2258);
@@ -42,7 +42,7 @@ public class VanillaFx extends FxAbstract
 		recordAlias.put("ward", 2265);
 		recordAlias.put("11", 2266);
 		
-		potionAlias = new TreeMap<String, Integer>(String.CASE_INSENSITIVE_ORDER);
+		potionAlias = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
 		potionAlias.put("blue", 0);
 		potionAlias.put("ocean", 0);
 		potionAlias.put("&b", 0);

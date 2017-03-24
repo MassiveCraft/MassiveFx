@@ -6,7 +6,7 @@ import java.util.Collection;
 
 public interface Locator
 {
-	public boolean canLocate(Object object);
-	public Location getLocation(Object object);
-	public Collection<Location> getLocations(Object object);
+	boolean canLocate(Object object);
+	Location getLocation(Object object);
+	Collection<Location> getLocations(Object object);
 }
