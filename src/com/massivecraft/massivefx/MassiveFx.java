@@ -2,7 +2,6 @@ package com.massivecraft.massivefx;
 
 import com.massivecraft.massivecore.MassivePlugin;
 import com.massivecraft.massivecore.util.Txt;
-import com.massivecraft.massivefx.cmd.CmdFx;
 import com.massivecraft.massivefx.fx.Fx;
 import com.massivecraft.massivefx.fx.SmokeFx;
 import com.massivecraft.massivefx.fx.StrikeFx;
@@ -49,10 +48,7 @@ public class MassiveFx extends MassivePlugin
 	public void onEnableInner()
 	{
 		// Activate
-		this.activate(
-			// Command 
-			CmdFx.class
-		);
+		this.activateAuto();
 		
 		// Register Fx
 		this.registerFx(VanillaFx.POTION_BREAK);
