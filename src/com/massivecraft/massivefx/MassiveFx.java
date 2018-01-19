@@ -1,6 +1,7 @@
 package com.massivecraft.massivefx;
 
 import com.massivecraft.massivecore.MassivePlugin;
+import com.massivecraft.massivecore.collections.MassiveMap;
 import com.massivecraft.massivecore.util.Txt;
 import com.massivecraft.massivefx.cmd.CmdFx;
 import com.massivecraft.massivefx.fx.Fx;
@@ -102,7 +103,7 @@ public class MassiveFx extends MassivePlugin
 	// FX REGISTRY
 	// -------------------------------------------- //
 	
-	protected Map<String, Fx> id2fx = new LinkedHashMap<>();
+	protected Map<String, Fx> id2fx = new MassiveMap<>();
 	
 	public Collection<Fx> getFxs()
 	{
@@ -144,7 +145,7 @@ public class MassiveFx extends MassivePlugin
 	// SELECTOR REGISTRY
 	// -------------------------------------------- //
 	
-	protected Map<String, Selector> id2selector = new LinkedHashMap<>();
+	protected Map<String, Selector> id2selector = new MassiveMap<>();
 	
 	public Collection<Selector> getSelectors()
 	{
